@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Project Board </title>
+    <link rel="stylesheet" href="styles/yourPrayerRequest.css">
+  </head>
+  <body>
+
+    <input type="date" class = "js-date-input">
+    <select name="prayer-requester" class = "js-prayer-requester">
+      <option>멤버</option>
+    </select>
+    <div>
+      <input type="text" placeholder = "Enter a Title" class = "js-post-title-input">
+      <input type="text" placeholder = "Enter Content" class = "js-post-content-input">
+    </div>
+
+    <button class = "js-save-new-post-btn">Save</button> 
+    <button class = "js-delete-post-btn">Delete </button>
+    <div class = "js-emoji"></div>
+
+
+    <table>
+      <thead>
+        <tr>
+          <th>Select</th>
+          <th>Date</th>
+          <th>Member</th>
+          <th>Title</th>
+        </tr>
+      </thead>
+      <tbody class = "js-post-table">
+        <!-- <tr class = "js-post-id">
+          <td><input type="checkbox" checked></td>
+          <td>2024-11-19</td>
+          <td>
+            My first Project is about...
+            <div class = "post-content js-post-content js-title-is-clicked">
+              Prayers!
+            </div>
+          </td>
+        </tr> -->
+      </tbody>
+    </table>
+  </body>
+
+  <script type = "module" src = "yourPrayerRequest.js"></script>
+</html>
